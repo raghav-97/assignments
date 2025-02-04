@@ -6,7 +6,27 @@
 */
 
 function countVowels(str) {
-    // Your code here
+  const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+  let vowelCount = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
 }
-
 module.exports = countVowels;
+
+
+// my solution... 
+// const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+//   let strArr = str.split("");
+//   let vowelCount = 0;
+//   for (let i = 0; i < strArr.length; i++) {
+//     for (let j = 0; j < vowels.length; j++) {
+//       if (strArr[i] == vowels[j]) {
+//         vowelCount++;
+//       }
+//     }
+//   }
+//   return vowelCount;
